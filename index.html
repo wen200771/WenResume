@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#img-2").hide();
+        $("#img-1").click(function () {
+          $("#img-1").fadeOut(1000);
+          $("#img-2").fadeIn(1000);
+        });
+        $("#img-2").click(function () {
+          $("#img-2").fadeOut(1000);
+          $("#img-1").fadeIn(1000);
+        });
+      });
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: 微軟正黑體;
+      }
+      body {
+        background: #edebd7;
+      }
+      #card {
+        width: 744px;
+        height: 528px;
+        background-color: white;
+        position: relative;
+        box-shadow: 10px 10px 8px gray;
+      }
+      #intro {
+        width: 238px;
+        height: 284px;
+        background: #e3b23c;
+        color: white;
+        padding-left: 24px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      #center {
+        width: 320px;
+        height: 528px;
+        background-color: lightgray;
+        position: absolute;
+        color: #423e37;
+        left: 238px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      h2 {
+        font-weight: 900;
+        margin-top: 20px;
+        font-size: 20px;
+        color: #e3b23c;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+      }
+      #center li {
+        font-size: 16px;
+      }
+      #right {
+        /* border: 1px solid black; */
+        padding-left: 24px;
+        padding-right: 24px;
+        position: absolute;
+        right: 0;
+        width: 186px;
+        height: 528px;
+      }
+      .skill {
+        width: 138px;
+        height: 32px;
+        /* background: rgb(230, 230, 230); */
+        position: relative;
+        color: gray;
+        margin-top: 10px;
+      }
+      .html {
+        display: inline-block;
+        /* border: 1px solid black; */
+        font-size: 14px;
+        position: absolute;
+        font-weight: 600;
+      }
+      .CSS {
+        display: inline-block;
+        /* border: 1px solid black; */
+        font-size: 14px;
+        position: absolute;
+        font-weight: 600;
+      }
+      .JAV {
+        display: inline-block;
+        /* border: 1px solid black; */
+        font-size: 14px;
+        position: absolute;
+        font-weight: 600;
+      }
+      .gray-bar {
+        width: 138px;
+        height: 12px;
+        background: lightgray;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .yellow-bar {
+        width: 90px;
+        height: 12px;
+        background: #e3b23c;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .yellow-bar2 {
+        width: 110px;
+        height: 12px;
+        background: #e3b23c;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .yellow-bar3 {
+        width: 60px;
+        height: 12px;
+        background: #e3b23c;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .text1 {
+        display: inline-block;
+        /* border: 1px solid black; */
+        font-size: 14px;
+        position: absolute;
+        font-weight: 600;
+      }
+      .text2 {
+        display: inline-block;
+        /* border: 1px solid black; */
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        font-weight: 600;
+      }
+      .skill2 .yellow-bar {
+        width: 40px;
+        left: 20%;
+      }
+      .skill3 .yellow-bar {
+        width: 50px;
+        left: 40%;
+      }
+      .skill4 .yellow-bar {
+        width: 10px;
+        left: 60%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <img src="photo.jpeg" id="img-1" width="238" height="244" />
+      <img src="photo2.jpeg" id="img-2" width="238" height="244" />
+      <div id="intro">
+        <h1>陳彥瑋</h1>
+        <p>24歲</p>
+        <p>廣告行銷 美術編輯</p>
+        <p>臺北市 文山區</p>
+        <p>
+          茶如人生 人生如茶<br />
+          濃烈清淡細細品味
+        </p>
+      </div>
+      <div id="center">
+        <h2>自我介紹</h2>
+        <p>
+          大家好!我是彥瑋，目前在寰宇軒行從事廣告行銷的工作
+          平日工作內容有寫企劃、平面設計、影像編輯、拍片等等，
+          從事相關工作已兩年，近期積極的學習網頁相關技能，
+          希望未來能有轉職的機會。
+        </p>
+        <h2>工作經歷</h2>
+        <ul>
+          <li>永樂活生濟股份有限公司</li>
+          <li>寰宇軒行股份有限公司</li>
+        </ul>
+        <h2>專業技能</h2>
+        <ul>
+          <li>平面設計</li>
+          <li>影像製作</li>
+        </ul>
+        <h2>聯絡方式</h2>
+        <ul>
+          <li>電話:0912199671</li>
+          <li>信箱:wen80420@gmail.com</li>
+        </ul>
+      </div>
+      <div id="right">
+        <h2>個性</h2>
+        <div class="skill skill2">
+          <div class="text1">內向</div>
+          <div class="text2">外向</div>
+          <div class="gray-bar"></div>
+          <div class="yellow-bar"></div>
+        </div>
+        <div class="skill skill3">
+          <div class="text1">理性</div>
+          <div class="text2">感性</div>
+          <div class="gray-bar"></div>
+          <div class="yellow-bar"></div>
+        </div>
+        <div class="skill skill4">
+          <div class="text1">無聊</div>
+          <div class="text2">有趣</div>
+          <div class="gray-bar"></div>
+          <div class="yellow-bar"></div>
+        </div>
+        <h2>技能</h2>
+        <div class="skill">
+          <div class="html">HTML</div>
+          <div class="gray-bar"></div>
+          <div class="yellow-bar"></div>
+        </div>
+        <div class="skill">
+          <div class="CSS">CSS</div>
+          <div class="gray-bar"></div>
+          <div class="yellow-bar2"></div>
+        </div>
+        <div class="skill">
+          <div class="JAV">JAV</div>
+          <div class="gray-bar"></div>
+          <div class="yellow-bar3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
